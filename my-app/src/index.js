@@ -2,7 +2,6 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import DynamicApp from './App';
 import reportWebVitals from './reportWebVitals';
-import Contact from "./contact";
 import Chantelle from './Chantelle.js';
 import ChantelleProductDetails from './Chantelleproductdetails';
 import Loan from './loan.js';
@@ -16,17 +15,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { CartProvider } from './CartProvider'; // Import CartProvider
-import WeatherApp from './Weather-app';
+// import WeatherApp from './Weather-app';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <DynamicApp/>,
   },
-  {
-    path: "contact",
-    element: <Contact/>,
-  },
+ 
   {
     path: "chantelle",
     element: <Chantelle/>,
