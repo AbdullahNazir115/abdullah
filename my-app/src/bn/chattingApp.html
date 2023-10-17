@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="chat.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+.main{
+    display: flex;
+    /* flex-direction: column; */
+justify-content: center;
+height: 100%;
+    align-items: center;
+    /* width: 1300px; */
+}
+
+.hide{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+.hide1{
+    visibility: hidden;
+    display: none;
+}
+
+.visible1{
+    visibility: visible;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+
+    .leftpara button{
+    margin-left: 1px;
+margin-bottom: 10px;
+
+/* margin-bottom: 22px;
+transform: translateY(21px); */
+height: 33px;
+}
+
+.leftm .leftpara p {
+    margin: -3px 0;
+  }
+  .rightm .rightpara p {
+    margin: -3px 0;
+  }
+
+.leftpara span{
+   width:45px;
+}
+.left .leftpara{
+width: 223px;
+}
+.left .leftpara button{
+margin-top: -14px;
+
+    margin-left: 1px;
+margin-bottom: 19px;
+
+/* margin-bottom: 22px;
+transform: translateY(10px); */
+transform: translateY(0px); 
+
+height: 33px;
+width: 110px;
+}
+
+.leftpara div{
+    display: block;
+    width: 313px;
+transform: translateX(0px);
+flex-direction: column;
+margin: 10px 0;
+}
+
+.rightpara span{
+   width:45px;
+}
+
+.leftpara h3{
+height: 22px;
+width: 131px;
+margin: 5px 0;
+color: floralwhite;
+background: #c3c1c1;
+padding: auto;
+border-radius: 5px;
+border: 0;
+text-align: center;
+}
+.rightm .rightpara span{
+width: 13px;
+}
+.leftm .leftpara span{
+width: 13px;
+}
+
+.rightpara h3{
+height: 22px;
+width: 131px;
+margin: 5px 0;
+color: floralwhite;
+
+background: #c3c1c1;
+padding: auto;
+border-radius: 5px;
+border: 0;
+text-align: center;
+}
+
+
+    .main{
+    display: flex;
+    flex-direction: column;
+    /* height: 500px; */
+height: 100%;
+
+justify-content: center;
+    align-items: center;
+    /* width: 1300px; */
+}
+.main .le{
+    width: 300px;
+    margin: 20px 0;
+
+}
+
+.main .ri{
+    width: 300px;
+}
+
+.leftpara button{
+    margin-left: 1px;
+margin-bottom: 10px;
+
+/* margin-bottom: 22px;
+transform: translateY(21px); */
+height: 33px;
+}
+
+.right .rightpara button{
+margin-top: -14px;
+
+    margin-left: 1px;
+margin-bottom: 19px;
+
+/* margin-bottom: 22px;
+transform: translateY(10px); */
+height: 33px;
+width: 110px;
+}
+
+.right .rightpara{
+width: 223px;
+}
+
+.rightpara div{
+    display: block;
+    width: 313px;
+transform: translateX(0px);
+flex-direction: column;
+margin: 10px 0;
+}
+.clear{
+margin-bottom: 20px;
+}
+.outside2 input {
+padding: 8px;
+border: 0;
+border-radius: 40px;
+width: 178px;
+background: #bdbaba;
+color: white;
+}
+
+.outside input {
+padding: 8px;
+border: 0;
+border-radius: 40px;
+width: 178px;
+background: #bdbaba;
+color: white;
+}
+
+}
+
+input{
+    padding: 8px;
+border: 0;
+border-radius: 40px;
+width: 200px;
+background: #bdbaba;
+color: white;
+margin-bottom: 24px;
+}
+
+.right{
+    /* margin-left: 70px; */
+}
+
+.ok1{
+    height: 32px;
+    border-radius: 55px;
+}
+
+
+.ok2{
+    height: 32px;
+    border-radius: 55px;
+}
+
+/* .resume .func .skills-prog ul li .skills-bar */
+p{
+    width: 200px;
+    border-radius: 5px;
+    margin: 10px 0;
+/* height: 30px; */
+/* padding: 30px 58px; */
+/* display: flex;
+/* width: 57px; */
+/* justify-content: end; */
+/* flex-direction: column;
+align-items: end; */ 
+}
+.leftm, .rightm {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    overflow-y:visible; /* Enable vertical scroll when content exceeds the height */
+    overflow-x: hidden;
+}
+.leftpara, .rightpara {
+    max-height: 400px; /* Set a maximum height for the chat content */
+}
+
+
+
+
+
+
+
+.leftm{
+    visibility: hidden;
+}
+.changename{
+    visibility: hidden;
+}
+
+.rightm{
+    visibility: hidden;
+}
+.changename2{
+    visibility: hidden;
+}
+.rain{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    cursor: pointer;
+}
+
+
+
+.le {
+    width: 500px;
+    margin: 0 20px;
+    background-image: url(439038.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 24px;
+    background-repeat: no-repeat;
+    background-size: cover; /* Change 'auto' to 'auto' */
+}
+
+.ri {
+    width: 500px;
+    margin: 0 20px;
+    background-image: url(439038.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    /* margin: 10px 0; */
+    transform: translateY(16px);
+}
+button {
+padding: 8px 16px;
+border: none;
+border-radius: 41px;
+background-color: #25D366; /* WhatsApp green color */
+color: #fff;
+cursor: pointer;
+margin-right: 14px;
+font-size: 14px;
+}
+
+button:hover {
+background-color: #128C7E; /* Darker shade of green on hover */
+}
+
+/* Add CSS for delete buttons */
+span.delete {
+color: #fff;
+background-color: #FF0000; /* Red color for delete buttons */
+padding: 6px 12px;
+border-radius: 50%;
+cursor: pointer;
+font-size: 12px;
+margin-left: 8px;
+}
+
+span.delete:hover {
+background-color: #D32F2F; /* Darker shade of red on hover */
+}
+p{
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    word-wrap: break-word;
+}
+/* .leftuser{
+    width: 520px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 17px 0px;
+transform: translateX(218px) translateY(203px);
+}
+
+.leftuser2{
+    width: 520px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 23px;
+transform: translateX(732px) translateY(132px);
+}
+
+
+*/
+
+.sty{
+    
+color: orange;
+border: 1px solid;
+  
+      }
+      .leftuser{
+
+        margin: 27px 0;
+      }
+      
+      span{
+        padding: 8px 16px;
+border: none;
+border-radius: 40px;
+background-color: #dcdcdcba;
+color: #fff;
+cursor: pointer;
+height: 11px;
+      }
+      .cha{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+
+      }
+      .cha h1{
+        font-size: 40px;
+      }
+
+.leftpara{
+    /* display: flex; */
+    width: 484px;
+    /* flex-direction: column; */
+}
+.leftpara p{
+    margin: 20px 0;
+}
+
+.rightpara p{
+    margin: 20px 0;
+}
+
+.rightpara{
+    display: flex;
+
+    flex-direction: column;
+    width: 484px;
+    background: none;
+}
+.one1{
+    align-self: center;
+}
+
+.one2{
+    /* transform: translateY(11px); */
+
+    margin-left: 14px;
+
+}
+
+
+.leftpara span{
+    margin-left: 11px;
+margin-bottom: 22px;
+transform: translateY(21px);
+height: 19px;
+}
+
+.rightpara span{
+    margin-left: 11px;
+margin-bottom: 22px;
+transform: translateY(21px);
+height: 19px;
+}
+.outside2{
+/* margin: 17px 0
+; */
+/* transform: translateY(11px); */
+display: flex;
+justify-content: center;
+align-items: baseline;
+}
+.outside{
+    display: flex;
+justify-content: center;
+align-items: baseline;
+}
+
+
+/* For WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners of the thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar thumb on hover */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+  }
+  
+  /* For Firefox */
+  /* You may need to use different selectors for older versions of Firefox */
+  /* Firefox 64+ */
+  html {
+    scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar thumb and track */
+    scrollbar-width: thin; /* Width of the scrollbar */
+  }
+  
+  /* Firefox 63 and below */
+  * {
+    scrollbar-face-color: #888; /* Color of the scrollbar thumb */
+    scrollbar-track-color: #f1f1f1; /* Color of the scrollbar track */
+  }
+  
+  /* For Microsoft Edge and Internet Explorer */
+  /* Note: Edge supports the same styles as Internet Explorer */
+  /* You may need to use different selectors for older versions of IE */
+  html {
+    -ms-overflow-style: none; /* Hide the scrollbar */
+  }
+  
+  /* IE 11 */
+  *::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+  
+
+
+h3 {
+    transform: translateY(-21px) translateX(117px);
+height: 22px;
+width: 210px;
+margin: 15px 0;
+color: floralwhite;
+background: #c3c1c1;
+padding: auto;
+border-radius: 5px;
+border: 0;
+text-align: center;
+}
+
+h2 {
+transform: translateY(-21px) translateX(54px);
+height: 30px;
+width: 390px;
+margin: 83px 0;
+color: floralwhite;
+
+background: #c3c1c1;
+padding: auto;
+border-radius: 5px;
+border: 0;
+text-align: center;
+}
+
+
+.rightpara div{
+display: flex;
+margin: 20px 0;
+}
+
+.leftpara div{
+display: flex;
+margin: 30px 0;
+}
+</style>
+<body>
+
+
+
+<div class="cha">
+    <h1>
+        CHATTING APP
+    </h1>
+
+</div>
+
+    <div class="rain">
+  
+<div class="main">
+
+    
+<div class="kl2">
+    
+        <button class="change-1">change background</button>
+
+    <div class="changebackground visibele1 hide1">
+
+        <img src="Mercedes-AMG-C63-Coupe-Edition-1-front-view.jpg" alt="" width="100px" class="img-1" >
+        <img src="zmercamg-001.jpg" alt="" width="100px" class="img-2">
+        <img src="mercedes-amg-c63-coupe-1.jpg" alt="" width="100px" class="img-3">
+        <img src="mercedes-benz-c63-amg-black-series-by-domanig-02.jpg" alt="" width="100px" class="img-4">
+        <img src="Mercedes-C63s-AMG-sedan-6.jpeg" alt="" width="100px" class="img-5">
+        
+        </div>
+        
+        
+        <button class="defualt">Back to default</button>
+    <!-- </div> -->
+    
+<div class="le">
+
+
+    
+<div class="flex">
+    <input type="text" name="" id="" class="user1" placeholder=" enter your name">
+    <button class="ok1">ok</button>
+</div>
+<button class="changename">change name</button>
+
+<div class="leftuser">
+    <p class="user1name sty"></p>
+    <p class="please1 sty"></p>
+</div>
+
+    <div class="leftm">
+    <div class="left">
+        <div class="leftpara">
+
+
+
+        </div>
+
+
+
+    </div>
+    
+
+
+</div>
+<div class="outside2">
+
+    <input type="text" name=""  class="leftinput" oninput="leftButton.disabled=false" >
+    
+        <button class="leftclass" onclick=" "><img src="pngwing.com (309).png" alt="" width="15px"></button>
+    </div>
+</div>
+</div>
+
+
+
+<button class="clear">clear CHAT history</button>
+
+
+
+
+<div class="kl">
+
+    <button class="change-2">change background</button>
+
+    <div class="changebackground visible hide">
+
+        <img src="Mercedes-AMG-C63-Coupe-Edition-1-front-view.jpg" alt="" width="100px" class="img-6" >
+        <img src="zmercamg-001.jpg" alt="" width="100px" class="img-7">
+        <img src="mercedes-amg-c63-coupe-1.jpg" alt="" width="100px" class="img-8">
+        <img src="mercedes-benz-c63-amg-black-series-by-domanig-02.jpg" alt="" width="100px" class="img-9">
+        <img src="19678.jpg" alt="" width="100px" class="img-10">
+        
+        </div>
+        
+        <button class="defualt2">Back to default</button>
+    
+
+    
+<div class="ri">
+
+
+    
+<div class="flex">
+    <input type="text" name="" id="" class="user2" placeholder=" enter your name">
+    <button class="ok2">ok</button>
+</div>
+
+
+
+<button class="changename2">change name</button>
+
+
+<div class="leftuser2">
+    <p class="user2name sty"></p>
+    <p class="please2 sty"></p>
+</div>
+
+<div class="rightm">
+    <div class="right">
+     
+
+        <p class="rightpara">
+          
+        </p>
+
+    </div>
+
+
+</div>
+<div class="outside">
+    <input type="text" name=""  class="rightinput">
+
+    
+    <button class="rightclass" onclick=""><img src="pngwing.com (309).png" alt="" width="15px"></button>
+</div>
+</div>
+
+</div>
+</div>
+<br>
+
+<script>
+    
+let username1=document.querySelector('.user1name')
+let username2=document.querySelector('.user2name')
+let lefm=document.querySelector('.leftm')
+let rightm=document.querySelector('.rightm')
+
+let saveuser1=localStorage.getItem('user1')
+let saveuser2=localStorage.getItem('user2')
+let lic=document.querySelector('.le')
+let ric=document.querySelector('.ri')
+
+let change1=document.querySelector('.change-1')
+let change2=document.querySelector('.change-2')
+
+
+let img1=document.querySelector('.img-1')
+let img2=document.querySelector('.img-2')
+let img3=document.querySelector('.img-3')
+let img4=document.querySelector('.img-4')
+let img5=document.querySelector('.img-5')
+let defaultButton=document.querySelector('.defualt')
+let defaultButton2=document.querySelector('.defualt2')
+
+let img6=document.querySelector('.img-6')
+let img7=document.querySelector('.img-7')
+let img8=document.querySelector('.img-8')
+let img9=document.querySelector('.img-9')
+let img10=document.querySelector('.img-10')
+
+
+change1.addEventListener('click',function(){
+  let class1=document.querySelector('.visibele1')
+  class1.classList.toggle('hide1')
+  console.log('jdj')
+})
+
+change2.addEventListener('click',function(){
+  let class1=document.querySelector('.visible')
+  class1.classList.toggle('hide')
+  console.log('jdj')
+})
+
+
+
+
+defaultButton.addEventListener('click',function(){
+  lic.style.background='url(439038.jpg)'
+lic.style.backgroundPosition='center'
+lic.style.backgroundAttachment='scroll'
+lic.style.backgroundRepeat='no-repeat'
+ lic.style.backgroundSize='cover'
+ localStorage.setItem('style',lic.style.background)
+
+})
+
+defaultButton2.addEventListener('click',function(){
+  ric.style.background='url(439038.jpg)'
+ric.style.backgroundPosition='center'
+ric.style.backgroundAttachment='scroll'
+ric.style.backgroundRepeat='no-repeat'
+ ric.style.backgroundSize='cover'
+ localStorage.setItem('stylee',ric.style.background)
+
+})
+
+
+
+img1.addEventListener('click',function(){
+lic.style.background='url(Mercedes-AMG-C63-Coupe-Edition-1-front-view.jpg)'
+ lic.style.backgroundPosition='center'
+ lic.style.backgroundAttachment='scroll'
+ lic.style.backgroundRepeat='no-repeat'
+  lic.style.backgroundSize='cover'
+localStorage.setItem('style',lic.style.background)
+
+  
+})
+
+img2.addEventListener('click',function(){
+  lic.style.background='url(zmercamg-001.jpg)'
+   lic.style.backgroundPosition='center'
+   lic.style.backgroundAttachment='scroll'
+   lic.style.backgroundRepeat='no-repeat'
+    lic.style.backgroundSize='cover'
+localStorage.setItem('style',lic.style.background)
+    
+  })
+
+  img3.addEventListener('click',function(){
+    lic.style.background='url(mercedes-amg-c63-coupe-1.jpg)'
+     lic.style.backgroundPosition='center'
+     lic.style.backgroundAttachment='scroll'
+     lic.style.backgroundRepeat='no-repeat'
+      lic.style.backgroundSize='cover'
+localStorage.setItem('style',lic.style.background)
+      
+    })
+  
+    img4.addEventListener('click',function(){
+      lic.style.background='url(mercedes-benz-c63-amg-black-series-by-domanig-02.jpg)'
+       lic.style.backgroundPosition='center'
+       lic.style.backgroundAttachment='scroll'
+       lic.style.backgroundRepeat='no-repeat'
+        lic.style.backgroundSize='cover'
+localStorage.setItem('style',lic.style.background)
+        
+      })
+
+      img5.addEventListener('click',function(){
+        lic.style.background='url(Mercedes-C63s-AMG-sedan-6.jpeg)'
+         lic.style.backgroundPosition='center'
+         lic.style.backgroundAttachment='scroll'
+         lic.style.backgroundRepeat='no-repeat'
+          lic.style.backgroundSize='cover'
+          
+        })
+
+
+        let ds=localStorage.getItem('style')
+        lic.style.background=ds
+
+localStorage.setItem('style',lic.style.background)
+
+
+img6.addEventListener('click',function(){
+  ric.style.background='url(Mercedes-AMG-C63-Coupe-Edition-1-front-view.jpg)'
+   ric.style.backgroundPosition='center'
+   ric.style.backgroundAttachment='scroll'
+   ric.style.backgroundRepeat='no-repeat'
+    ric.style.backgroundSize='cover'
+  localStorage.setItem('stylee',ric.style.background)
+  
+    
+  })
+  
+  img7.addEventListener('click',function(){
+    ric.style.background='url(zmercamg-001.jpg)'
+     ric.style.backgroundPosition='center'
+     ric.style.backgroundAttachment='scroll'
+     ric.style.backgroundRepeat='no-repeat'
+      ric.style.backgroundSize='cover'
+  localStorage.setItem('stylee',ric.style.background)
+      
+    })
+  
+    img8.addEventListener('click',function(){
+      ric.style.background='url(mercedes-amg-c63-coupe-1.jpg)'
+       ric.style.backgroundPosition='center'
+       ric.style.backgroundAttachment='scroll'
+       ric.style.backgroundRepeat='no-repeat'
+        ric.style.backgroundSize='cover'
+  localStorage.setItem('stylee',ric.style.background)
+        
+      })
+    
+      img9.addEventListener('click',function(){
+        ric.style.background='url(mercedes-benz-c63-amg-black-series-by-domanig-02.jpg)'
+         ric.style.backgroundPosition='center'
+         ric.style.backgroundAttachment='scroll'
+         ric.style.backgroundRepeat='no-repeat'
+          ric.style.backgroundSize='cover'
+  localStorage.setItem('stylee',ric.style.background)
+          
+        })
+  
+        img10.addEventListener('click',function(){
+          ric.style.background='url(19678.jpg)'
+           ric.style.backgroundPosition='center'
+           ric.style.backgroundAttachment='scroll'
+           ric.style.backgroundRepeat='no-repeat'
+            ric.style.backgroundSize='cover'
+  localStorage.setItem('stylee',ric.style.background)
+            
+          })
+          let ds2=localStorage.getItem('stylee')
+          ric.style.background=ds2
+  
+
+          localStorage.setItem('stylee',ric.style.background)
+
+
+
+if(saveuser1){
+    username1.innerHTML=saveuser1
+}
+
+localStorage.setItem('user1',username1.innerHTML)
+
+
+
+if(saveuser2){
+    username2.innerHTML=saveuser2
+}
+
+localStorage.setItem('user2',username2.innerHTML)
+
+
+
+
+let changename=document.querySelector('.changename')
+let clear=document.querySelector('.clear')
+clear.addEventListener('click',function(){
+    localStorage.clear('leftpara')
+})
+let changename2=document.querySelector('.changename2')
+
+let ok1=document.querySelector('.ok1')
+let ok2=document.querySelector('.ok2')
+let please1=document.querySelector('.please1')
+let please2=document.querySelector('.please2')
+// let one1=document.querySelector('.one1')
+// let one2=document.querySelector('.one2')
+
+let user1=document.querySelector('.user1')
+let user2=document.querySelector('.user2')
+
+let leftButton=document.querySelector('.leftclass')
+let rightButton=document.querySelector('.rightclass')
+
+
+let leftinput=document.querySelector('.leftinput')
+let rightinput=document.querySelector('.rightinput')
+
+
+let leftpara=document.querySelector('.leftpara')
+let rightpara=document.querySelector('.rightpara')
+
+leftButton.disabled=true
+rightButton.disabled=true
+
+  
+let leftsave=localStorage.getItem('leftpara')
+let rightsave=localStorage.getItem('rightpara')
+
+function addDeleteButtonListeners() {
+    let deleteButtons = document.querySelectorAll('span');
+    deleteButtons.forEach((button) => {
+      button.addEventListener('click', function () {
+        let parentDiv = button.parentElement;
+        parentDiv.remove();
+        
+localStorage.setItem('leftpara',leftpara.innerHTML)
+        localStorage.setItem('rightpara',rightpara.innerHTML)
+
+       
+      });
+    });
+  }
+
+  
+
+
+if(leftsave){
+    leftpara.innerHTML=leftsave
+}
+
+if(rightsave){
+    rightpara.innerHTML=rightsave
+}
+
+
+window.onload = function () {
+addDeleteButtonListeners()   
+
+
+};
+
+//         // Additional event listener for window.onbeforeunload to save chat history before the page reloads
+//         window.onbeforeunload = function () {
+// addDeleteButtonListeners()         };
+    
+
+
+ok1.addEventListener('click',function(){
+    if(user1.value){
+lefm.style.visibility='visible'
+ok1.style.visibility='hidden'
+user1.style.visibility='hidden'
+changename.style.visibility='visible'
+username1.innerHTML=`${user1.value} 'S chatting screen `
+localStorage.setItem('user1',username1.innerHTML)
+
+    }
+localStorage.setItem('user1',username1.innerHTML)
+
+})
+
+
+changename.addEventListener('click',function(){
+    ok1.style.visibility='visible'
+user1.style.visibility='visible'
+changename.style.visibility='hidden'
+})
+
+
+ok2.addEventListener('click',function(){
+    if(user2.value){
+rightm.style.visibility='visible'
+ok2.style.visibility='hidden'
+user2.style.visibility='hidden'
+changename2.style.visibility='visible'
+
+username2.innerHTML=`${user2.value} 'S chatting screen ` 
+localStorage.setItem('user2',username2.innerHTML)
+
+    }
+localStorage.setItem('user2',username2.innerHTML)
+
+})
+
+
+changename2.addEventListener('click',function(){
+    ok2.style.visibility='visible'
+user2.style.visibility='visible'
+changename2.style.visibility='hidden'
+})
+
+document.addEventListener("DOMContentLoaded",function(){
+    leftpara.style.visibility='visible'
+rightpara.style.visibility='visible'
+})
+
+rightinput.addEventListener('input',function(){
+if(rightinput.value){
+
+rightButton.disabled=false
+
+
+}
+})
+// function deck(){
+leftButton.addEventListener('click',function(){
+if(leftinput.value && user1.value){
+
+    let datepara=document.createElement('h3')
+    let datepara2=document.createElement('h3')
+
+  
+
+    
+    let para2=document.createElement('p')
+    let para=document.createElement('p')
+let one1=document.createElement('div')
+let one2=document.createElement('div')
+    let para3=document.createElement('span')
+    let para4=document.createElement('span')
+    let timee=document.createElement('p')
+    let timeee=document.createElement('p')
+    // let para5=document.createElement('span')
+    
+    para3.innerHTML='&#xf014;'
+    para3.classList.add('fa')
+    
+    para4.innerHTML='&#xf014;'
+    para4.classList.add('fa')    // para5.innerHTML='delete for all'
+    para2.style.color='white'
+    para2.style.background='#25D366'
+   timee.style.background='none'
+   timee.style.color='white'
+
+    
+   timeee.style.background='none'
+   timeee.style.color='white'
+    one1.style.display='flex'
+    one2.style.display='flex'
+localStorage.setItem('rightpara',rightpara.innerHTML)
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+let options = {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'Asia/Karachi' // Set the timeZone to Pakistan (Asia/Karachi)
+  };
+
+
+  function getPakistaniTime() {
+    const now = new Date();
+    return now.toLocaleString('en-PK', {
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true,
+      timeZone: 'Asia/Karachi'
+    });
+  }
+
+  function getPakistaniDate() {
+    const now = new Date();
+    const options = {
+      day: 'numeric',
+      month: 'long',
+      timeZone: 'Asia/Karachi'
+    };
+    return now.toLocaleDateString('en-PK', options);
+  }
+let hours =new Date()
+let hour =hours.toLocaleString('en-PK');
+let minutes =hours.toLocaleString('en-PK');
+let day=hours.getDay()
+// var days=hours.get
+
+let ampm = (hours >= 12) ? "PM" : "AM";
+
+datepara.innerHTML=getPakistaniDate()
+datepara2.innerHTML=getPakistaniDate()
+
+
+// leftpara.appendChild(datepara)
+
+leftpara.appendChild(one1)
+
+
+timee.innerHTML=getPakistaniTime()    
+timeee.innerHTML=getPakistaniTime()  
+
+
+// rightpara.appendChild(datepara2)
+
+rightpara.appendChild(one2)
+one1.appendChild(datepara)
+
+one1.appendChild(para2)
+    // one1.appendChild(para5)
+    one1.appendChild(para3)
+    one1.appendChild(timee)
+
+    one2.appendChild(datepara2)
+
+    one2.appendChild(para)
+    one2.appendChild(para4)
+    one2.appendChild(timeee)
+   
+
+
+
+
+
+
+
+// })
+
+    
+    
+    para.style.color='white'
+    para.style.background='black'
+    
+    para2.innerHTML=`${user1.value}:   ${leftinput.value}` 
+      para.innerHTML =`${user1.value}:   ${leftinput.value} ` 
+    leftinput.value=''
+    please1.innerHTML=''
+    localStorage.setItem('leftpara',leftpara.innerHTML)
+
+    if(leftinput.value==='') {
+
+leftButton.disabled=true
+
+ }
+//  user1.value=''
+
+
+        console.log(leftinput.value)
+        
+
+        
+    }
+
+    
+
+    else if(user1.value===''){
+     
+        please1.innerHTML='please enter your name'
+    }
+// }
+localStorage.setItem('leftpara',leftpara.innerHTML)
+localStorage.setItem('rightpara',rightpara.innerHTML)
+
+addDeleteButtonListeners()
+
+})
+localStorage.setItem('leftpara',leftpara.innerHTML)
+
+rightButton.addEventListener('click',function(){
+
+if(rightinput.value && user2.value){
+
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+    let para2=document.createElement('p')
+    let datepara=document.createElement('h3')
+    let datepara2=document.createElement('h3')
+    let para=document.createElement('p')
+    let one1=document.createElement('div')
+    let one2=document.createElement('div')
+    let timee=document.createElement('p')
+    let timeee=document.createElement('p')
+
+    let para3=document.createElement('span')
+    let para4=document.createElement('span')
+    // let para5=document.createElement('span')
+    timee.style.background='none'
+   timee.style.color='white'
+
+   timeee.style.background='none'
+   timeee.style.color='white'
+
+   para3.innerHTML='&#xf014;'
+    para3.classList.add('fa')
+    
+    para4.innerHTML='&#xf014;'
+    para4.classList.add('fa')
+    // para5.innerHTML='delete For All'
+
+    para2.style.color='white'
+    one1.style.display='flex'
+    one2.style.display='flex'
+    para2.style.background='#25D366'
+
+   
+
+    function getPakistaniTime() {
+        const now = new Date();
+        return now.toLocaleString('en-PK', {
+          hour: 'numeric',
+          minute: 'numeric',
+          hour12: true,
+          timeZone: 'Asia/Karachi'
+        });
+      }
+    
+      function getPakistaniDate() {
+        const now = new Date();
+        const options = {
+          day: 'numeric',
+          month: 'long',
+          timeZone: 'Asia/Karachi'
+        };
+        return now.toLocaleDateString('en-PK', options);
+      }
+    let hours =new Date()
+    let hour =hours.toLocaleString('en-PK');
+    let minutes =hours.toLocaleString('en-PK');
+    let day=hours.getDay()
+    // var days=hours.get
+    
+    let ampm = (hours >= 12) ? "PM" : "AM";
+    
+    datepara.innerHTML=getPakistaniDate()
+    datepara2.innerHTML=getPakistaniDate()
+    
+    
+    // leftpara.appendChild(datepara)
+    
+    
+    
+    timee.innerHTML=getPakistaniTime()    
+    timeee.innerHTML=getPakistaniTime()  
+
+
+rightpara.appendChild(datepara)
+
+    rightpara.appendChild(one1)
+    
+localStorage.setItem('leftpara',leftpara.innerHTML)
+
+one1.appendChild(datepara)
+
+
+one1.appendChild(para2)
+one1.appendChild(para3)
+one1.appendChild(timee)
+// one1.appendChild(para5)
+leftpara.appendChild(datepara2)
+
+leftpara.appendChild(one2)
+
+datepara2.innerHTML=`${day} ${monthNames[hours.getMonth()]}`
+
+// one2.appendChild(datepara2)
+
+one2.appendChild(datepara2)
+
+one2.appendChild(para)
+
+    one2.appendChild(para4)
+    one2.appendChild(timeee)
+
+para2.innerHTML=`${user2.value}:   ${rightinput.value}` 
+      para.innerHTML =`${user2.value}:   ${rightinput.value} ` 
+
+    para.style.color='white'
+    para.style.background='black'
+  rightinput.value=''
+  please2.innerHTML=''
+
+  localStorage.setItem('rightpara',rightpara.innerHTML)
+  localStorage.setItem('leftpara',leftpara.innerHTML)
+
+
+  
+
+
+
+
+localStorage.setItem('rightpara',rightpara.innerHTML)
+localStorage.setItem('leftpara',leftpara.innerHTML)
+
+    if(rightinput.value==='') {
+
+rightButton.disabled=true
+
+ }
+    console.log(leftinput.value)
+}
+
+else  if(user2.value===''){
+     
+        please2.innerHTML='please enter your name'
+    }
+addDeleteButtonListeners()
+
+})
+localStorage.setItem('rightpara',rightpara.innerHTML)
+localStorage.setItem('leftpara',leftpara.innerHTML)
+
+
+</script>
+</body>
+</html>

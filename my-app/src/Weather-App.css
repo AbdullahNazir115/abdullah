@@ -1,0 +1,125 @@
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.percentage{
+margin: 0 4px;
+}
+
+.p{
+    margin: 20px 0;
+}
+
+.cards {
+        
+    width: 400px;
+    height: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 30px auto;
+    background-color: rgba(13, 13, 189, 0.85);
+    border-radius: 15px;
+}
+  .cards h1{
+    /* width: 100%; */
+    color: white;
+}
+.search input{
+    height: 41px;
+
+    width: 244px;
+    border-radius: 30px;
+    border: 0;
+outline: none;
+padding: 0 20px;
+font-family: 'Open Sans', sans-serif;
+}
+.temperature-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+}
+.temperature-icon p h1{
+    /* width: 1%; */
+    height: 100%;
+
+}
+.temperature-icon p{
+    height: 9.5vh;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 24px 0;
+}
+.search{
+    display: flex;
+    align-items: center;
+    height: 82px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.circle{
+    height: 40px;
+  background: white;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 71px;
+  margin-left: 24px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+
+}
+.pairs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: white;
+    height: 13vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.bottom p{
+    font-size: 14px;
+    /* margin: 20px 0; */
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+.top p{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.top svg{
+    margin: 0 10px;
+}
+@media screen  and (max-width:310px){
+    .cards {
+        object-fit: cover;
+        width: 221px;
+        height:400px;
+       
+      }
+    .cards p{
+        font-size: 4vw;
+    }
+}
