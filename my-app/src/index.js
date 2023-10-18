@@ -4,7 +4,6 @@ import DynamicApp from './App';
 import reportWebVitals from './reportWebVitals';
 import Chantelle from './Chantelle.js';
 import ChantelleProductDetails from './Chantelleproductdetails';
-import Loan from './loan.js';
 import Shaal from './Shaal.js';
 import Unstiched from './Unstiched.js';
 

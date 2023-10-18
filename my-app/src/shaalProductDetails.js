@@ -1,5 +1,7 @@
 import { useState,useRef,useEffect,useContext,Component } from 'react';
 import { Link, Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 import  {shaal} from './CartProvider.js'
 import CartContext from './CartContext.js'; // Import CartContext
 
@@ -45,7 +47,12 @@ function ShaalProductDetails(){
   const selectedProductLineImage5 = queryParams.get('/lineImage5');
   const selectedProductLineImage6 = queryParams.get('/lineImage6');
   const { cart, instock,addToCart,decreaseFromcart ,removeFromcart,addToCart2,decreaseFromcart2,quantitySelector,SetQuantity,SetQuantity2,Find,Finder,Filter,FindShow, setFindShow,Setfilter,handleSearchInputChange,ChangePrice,unit,unitChanger} = useContext(CartContext); // Access cart and addToCart from CartContext
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
+
+  function handleImageClick (product)  {
+    navigate(`/shaal/shaalProductDetails?/img=${product.img}&name=${product.name}&id=${product.id}&price=${product.price}&type=${product.type}&/lineImage1=${product.lineImage1}&/lineImage2=${product.lineImage2}&/lineImage3=${product.lineImage3}&/lineImage4=${product.lineImage4}&/lineImage5=${product.lineImage5}&/lineImage6=${product.lineImage6}&size=${product.size}&clothtype=${product.clothtype}&pricelogo=${product.pricelogo}&priceunit=${product.priceunit}&pricee=${product.pricee}`);
+   
+  };
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
@@ -631,7 +638,7 @@ toggleFlow()
         <ul>
     {cart.map((item) => (
       <>
-      <div className="item-details">
+      <div className="item-details" key={item.id}>
      <div className="cart-image">
         <img src={item.img} alt="" width={'120px'} />
 
@@ -718,7 +725,7 @@ toggleFlow()
 
 {Find==='' ?'': FindShow.map(function(product){
   return <>
-  <div className="lef">
+  <div className="lef" key={product.id}>
   <span onClick={function(){handleImageClick(product)}}>{product.name}</span>
 
 </div>
@@ -736,7 +743,7 @@ toggleFlow()
 <div className="right-show">
   {Find==='' ?'': FindShow.map(function(product){
   return <>
-  <div className="all-items">
+  <div className="all-items" key={product.id}>
 
  <div key={product.id} style={{margin: '19px 6px'}} className='contains-all'>
                 <img  onClick={function(){handleImageClick(product)}}
@@ -828,7 +835,7 @@ toggleFlow()
 
 {Find==='' ?'': FindShow.map(function(product){
   return <>
-  <div className="lef">
+  <div className="lef" key={product.id}> 
   <span onClick={function(){handleImageClick(product)}}>{product.name}</span>
 
 </div>
@@ -1140,8 +1147,10 @@ setCurrentImageIndex(5)
             </div>
   
             </div>
+            <div className="header-related">
+  <p>RELATED PRODUCTS</p>
+  </div>
             <div className="related-products">
-  <h1>RELATED PRODUCTS</h1>
 </div>
 <div className="related-products">
 <div className="banner-product-2">

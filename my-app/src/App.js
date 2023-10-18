@@ -630,11 +630,11 @@ toggleFlow()
 
 </div>
 <div className="div">
-<Link to='loan'><img src="barouqe-img-3.png" alt="" width={'600px'}/></Link>
+<img src="barouqe-img-3.png" alt="" width={'600px'}/>
 
 <div className="bottom-section">
 <h1 style={{color:'white'}}>LOANN</h1>
-<Link to='loan' ><button className="square-button">SHOP NOW</button></Link>
+<button className="square-button">SHOP NOW</button>
 
 </div>
 

@@ -2,6 +2,8 @@ import { useState,useRef,useEffect,useContext,Component } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import  {chantelle} from './CartProvider.js'
 import CartContext from './CartContext.js'; // Import CartContext
+import { useNavigate } from 'react-router-dom';
+
 
 import { useLocation } from 'react-router-dom';
 import './baroque.css'
@@ -46,7 +48,17 @@ function ChantelleProductDetails(){
   const selectedProductLineImage4 = queryParams.get('/lineImage4');
   const selectedProductLineImage5 = queryParams.get('/lineImage5');
   const selectedProductLineImage6 = queryParams.get('/lineImage6');
+  
+  
   const { cart, addToCart,instock,instocker,decreaseFromcart ,removeFromcart,addToCart2,decreaseFromcart2,quantitySelector,SetQuantity,SetQuantity2,Find,Finder,Filter,FindShow, setFindShow,Setfilter,handleSearchInputChange,ChangePrice,unit,unitChanger} = useContext(CartContext); // Access cart and addToCart from CartContext
+
+   const navigate = useNavigate();
+
+  function handleImageClick (product)  {
+    navigate(`/shaal/shaalProductDetails?/img=${product.img}&name=${product.name}&id=${product.id}&price=${product.price}&type=${product.type}&/lineImage1=${product.lineImage1}&/lineImage2=${product.lineImage2}&/lineImage3=${product.lineImage3}&/lineImage4=${product.lineImage4}&/lineImage5=${product.lineImage5}&/lineImage6=${product.lineImage6}&size=${product.size}&clothtype=${product.clothtype}&pricelogo=${product.pricelogo}&priceunit=${product.priceunit}&pricee=${product.pricee}`);
+   
+  };
+
   // const navigate = useNavigate();
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -55,6 +67,7 @@ function ChantelleProductDetails(){
     document.body.style.overflow = 'auto'; // Enable scrolling when the sidebar is closed
 
   },[])
+
 
 const [sidebarVisible2, setSidebarVisible2] = useState(false);
 const [dropdownVisible2, setDropdownVisible2] = useState(false);
@@ -1120,8 +1133,12 @@ setCurrentImageIndex(5)
             </div>
   
             </div>
+            <div className="header-related">
+  <p>RELATED PRODUCTS</p>
+  </div>
             <div className="related-products">
-  <h1>RELATED PRODUCTS</h1>
+              
+  
 </div>
 <div className="related-products">
 <div className="banner-product-2">
